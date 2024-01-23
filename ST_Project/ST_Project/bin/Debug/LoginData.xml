@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Automation>
+  <Execution>
+
+
+    <CheckoutWithAllValidDetails_TC006>
+      <url>https://www.saucedemo.com/</url>
+      <username>standard_user</username>
+      <password>secret_sauce</password>
+    </CheckoutWithAllValidDetails_TC006>
+
+    <CheckoutWithAllValidDetails_TC006>
+      <url>https://www.saucedemo.com/</url>
+      <username>standard_user</username>
+      <password>secret_sauce</password>
+    </CheckoutWithAllValidDetails_TC006>
+
+
+  </Execution>
+</Automation>
+
+

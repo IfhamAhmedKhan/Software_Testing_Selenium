@@ -1,0 +1,32 @@
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\obj\Debug\ST_Project.csproj.AssemblyReference.cache
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\obj\Debug\ST_Project.csproj.CoreCompileInputs.cache
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\CorePage.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\SauceDemo\CheckOut\CheckOut.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\SauceDemo\Login Page\LoginPage.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\SauceDemo\Product Page\ProductPage.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\SauceDemo\Your Cart\YourCart.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\TestExecution.cs
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\ST_Project.dll.config
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\ST_Project.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\ST_Project.pdb
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\WebDriver.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\WebDriver.Support.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\WebDriver.xml
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\WebDriver.Support.xml
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\obj\Debug\ST_Project.csproj.CopyComplete
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\obj\Debug\ST_Project.dll
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\obj\Debug\ST_Project.pdb
+C:\Users\Ifham.Khan\source\repos\ST_Project\ST_Project\bin\Debug\LoginData.xml
