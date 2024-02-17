@@ -137,6 +137,39 @@ namespace ST_Project
 
         }
 
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithEmptyUsernameandEmptyPasswordTC008()
+        {
+            loginpage.login("https://www.saucedemo.com/", "", "");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Username is required", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithValidUsernameandEmptyPasswordTC009()
+        {
+            loginpage.login("https://www.saucedemo.com/", "standard_user", "");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Password is required", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithEmptyUsernameandValidPasswordTC010()
+        {
+            loginpage.login("https://www.saucedemo.com/", "", "secret_sauce");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Username is required", actualtext);
+
+        }
+
+        
+
+
 
     }
 }

@@ -137,6 +137,85 @@ namespace ST_Project
 
         }
 
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithEmptyUsernameandEmptyPasswordTC008()
+        {
+            loginpage.login("https://www.saucedemo.com/", "", "");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Username is required", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithValidUsernameandEmptyPasswordTC009()
+        {
+            loginpage.login("https://www.saucedemo.com/", "standard_user", "");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Password is required", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LoginwithEmptyUsernameandValidPasswordTC010()
+        {
+            loginpage.login("https://www.saucedemo.com/", "", "secret_sauce");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("#login_button_container > div > form > div.error-message-container.error")).Text;
+            Assert.AreEqual("Epic sadface: Username is required", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void AddProductToCartWithoutLoginTC011()
+        {
+            productpage.products();
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("h3")).Text;
+            Assert.AreEqual("Login", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void LogoutAfterLoginTC012()
+        {
+            loginpage.login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            productpage.products();
+            yourcart.Cart();
+            checkout.checkOut();
+            CorePage.driver.FindElement(By.CssSelector("#react-burger-menu-btn")).Click();
+            CorePage.driver.FindElement(By.CssSelector("#logout_sidebar_link")).Click();
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("h4")).Text;
+            Assert.AreEqual("Accepted usernames are:", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void SearchForNonExistingProductTC013()
+        {
+            loginpage.login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            CorePage.driver.FindElement(By.CssSelector(".inventory_search_container input")).SendKeys("Non-existing product");
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("div.inventory_item:nth-child(1)")).Text;
+            Assert.AreEqual("No results found.", actualtext);
+
+        }
+
+        [TestMethod]
+        [TestCategory("Negative_TC")]
+        public void AddProductToCartWithoutSelectingTC014()
+        {
+            loginpage.login("https://www.saucedemo.com/", "standard_user", "secret_sauce");
+            CorePage.driver.FindElement(By.CssSelector(".btn_inventory:nth-child(1)")).Click();
+            CorePage.driver.FindElement(By.CssSelector(".shopping_cart_link")).Click();
+            string actualtext = CorePage.driver.FindElement(By.CssSelector("h3")).Text;
+            Assert.AreEqual("Your Cart", actualtext);
+
+        }
+
+
 
     }
 }
